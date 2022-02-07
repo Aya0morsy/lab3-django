@@ -1,0 +1,16 @@
+{%include 'base.html'%}
+   
+<form method="POST">
+    {% csrf_token %}  
+<table class="center">
+ 
+    
+    <tr>
+    <td><label><b>TRACK</b></label>
+        <input type="text" placeholder="Enter track" name="trname" required></td>
+      <td> <button type="submit">add track</button></td>
+
+    </tr>
+   
+  </table>
+  </form>

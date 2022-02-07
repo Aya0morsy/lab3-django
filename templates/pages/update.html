@@ -1,0 +1,19 @@
+{%include 'base.html'%}
+   
+<form method="POST" action="/actupdate/{{trainees.id}}">
+    {% csrf_token %}  
+<table class="center">
+<tr>
+  <td><label><b>trainee id</b></label>
+    <input type="text" name= 'id' id='id_id' value="{{trainees.id}}" required>
+</td>
+  <td><labe><b>trainee name</b></label>
+    <input type="text"  name="trainee_name" required  value="{{trainees.trainee_name}}"></td>
+  <td><label><b>faculty</b></label>
+    <input type="text"  name="faculty" required  value="{{trainees.faculty}}" ></td>
+    <td><label><b>track id</b></label>
+        <input type="text"  name="track" required  value="{{trainees.track}}" ></td>
+    <td> <button type="submit">add trainee</button></td>
+</tr>
+
+</form>
